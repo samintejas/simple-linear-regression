@@ -14,7 +14,7 @@ plotData(X, y);
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
-%++++++++++++++++++++++++++++++++++++++++++++++++++COST & GRADIENT DECENT++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++COST FUNCTION++++++++++++++++++++++++++++++++++++++++++++++++++
 
 X = [ones(m, 1), data(:,1)]; 
 % Add a column of ones to x
@@ -30,10 +30,11 @@ fprintf('\nTesting the cost function ...\n')
 % compute and display initial scores
 J = computeCost(X, y, theta);
 fprintf('With theta = [0 ; 0]\nCost computed = %f\n', J);
-fprintf('Expected cost value (approx) 32.07\n');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++GRADIENT DECENT++++++++++++++++++++++++++++++++++++++++++++++++++
 
 fprintf('\nRunning Gradient Descent ...\n')
 % run gradient descent
@@ -53,13 +54,11 @@ legend('Training data', 'Linear regression')
 hold off 
 % don't overlay any more plots on this figure
 
-% Predict values for population sizes of 35,000 and 70,000
-predict1 = [1, 3.5] *theta;
-fprintf('For population = 35,000, we predict a profit of %f\n',...
+% Predict values for 9.25 hrs/day
+predict1 = [1, 9.25] *theta;
+fprintf('The score for studying 9.25hrs per day is %f\n',...
     predict1*10000);
-predict2 = [1, 7] * theta;
-fprintf('For population = 70,000, we predict a profit of %f\n',...
-    predict2*10000);
+
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
