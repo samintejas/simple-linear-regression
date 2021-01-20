@@ -3,7 +3,7 @@ clear ; close all; clc
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++PLOTTING DATA++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 fprintf('Plotting Data ...\n')
-data = load('MLdata.txt');
+data = load('MLData.txt');
 X = data(:, 1); y = data(:, 2);
 m = length(y); 
 % m is the number of training examples
