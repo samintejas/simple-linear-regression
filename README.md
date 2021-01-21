@@ -5,3 +5,12 @@
  ####RESULT####
  
 according to my ML program for learning 9.25hrs/Day the student will get a mark of 92.934596!!
+
+
+RUNNING INSTRUCTIONS
+
+1 - Download the code as a zip package
+2 - extract it and open full.m in octave fro within the directory
+3 - run full.m
+4 - press continue (by pressing any key while on command window)
+5 - view the results and plots :)
